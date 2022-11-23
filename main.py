@@ -8,6 +8,7 @@ from nats import get_all_nats
 from phone_numbers import get_all_numbers
 from pictures import get_all_pictures_url
 from streets import get_all_streets
+from user import get_users_by_country
 
 
 data = read_data('Data/randomusers.json')
@@ -30,7 +31,9 @@ def main():
     images = get_all_pictures_url(data)
     # print(images)
     streets = get_all_streets(data)
-    print(streets)
+    # print(streets)
+    users = get_users_by_country(data, 'Finland')
+    print(users)
 
 main()
 

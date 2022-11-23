@@ -7,3 +7,8 @@ def get_all_emails(data: dict) -> list[str]:
     Returns:
         list: list of emails.
     '''
+    d=[]
+    m=data['results']
+    for s in m:
+        d.append(s['email'])
+    return d

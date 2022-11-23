@@ -20,7 +20,9 @@ def main():
     cities = get_all_cities(data)
     # print(cities)
     countries = get_all_countries(data)
-    print(countries)
+    # print(countries)
+    emailes = get_all_emails(data)
+    print(emailes)
 
 main()
 

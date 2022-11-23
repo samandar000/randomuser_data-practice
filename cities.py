@@ -7,3 +7,7 @@ def get_all_cities(data: dict) -> list[str]:
     Returns:
         list: list of cities.
     '''
+    s=[]
+    for i in data['results']:
+        s.append(i['location']['city'])
+    return s

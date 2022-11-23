@@ -16,7 +16,9 @@ def main():
     ages = get_all_ages(data)
     olest_age = get_the_oldest_age(ages)
     youngest_age = get_the_youngest_age(ages)
-    print(youngest_age)
+    # print(youngest_age)
+    cities = get_all_cities(data)
+    print(cities)
 
 main()
 

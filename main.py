@@ -24,7 +24,9 @@ def main():
     emailes = get_all_emails(data)
     # print(emailes)
     nats = get_all_nats(data)
-    print(nats)
+    # print(nats)
+    phone_numbers = get_all_numbers(data)
+    print(phone_numbers)
 
 main()
 

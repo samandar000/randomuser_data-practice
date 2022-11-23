@@ -1,3 +1,5 @@
+import json
+
 def read_data(file_path: str) -> dict:
     '''read data from a file
     

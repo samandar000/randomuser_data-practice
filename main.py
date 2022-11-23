@@ -28,7 +28,9 @@ def main():
     phone_numbers = get_all_numbers(data)
     # print(phone_numbers)
     images = get_all_pictures_url(data)
-    print(images)
+    # print(images)
+    streets = get_all_streets(data)
+    print(streets)
 
 main()
 

@@ -18,7 +18,9 @@ def main():
     youngest_age = get_the_youngest_age(ages)
     # print(youngest_age)
     cities = get_all_cities(data)
-    print(cities)
+    # print(cities)
+    countries = get_all_countries(data)
+    print(countries)
 
 main()
 

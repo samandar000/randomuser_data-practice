@@ -11,4 +11,9 @@ from streets import get_all_streets
 
 
 data = read_data('Data/randomusers.json')
-print(data)
+
+def main():
+    ages = get_all_ages(data)
+    print(ages)
+
+main()

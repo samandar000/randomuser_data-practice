@@ -7,6 +7,14 @@ def get_all_ages(data: dict) -> list[int]:
     Returns:
         list: list of ages.
     '''
+    # create an empty list
+    ages = []
+    # loop each user
+    for user in data['results']:
+        # append age
+        ages.append(user['dob']['age'])
+
+    return ages
 
 
 def get_the_oldest_age(ages: list[int]) -> int:

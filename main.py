@@ -22,7 +22,9 @@ def main():
     countries = get_all_countries(data)
     # print(countries)
     emailes = get_all_emails(data)
-    print(emailes)
+    # print(emailes)
+    nats = get_all_nats(data)
+    print(nats)
 
 main()
 

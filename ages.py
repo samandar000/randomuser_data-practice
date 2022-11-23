@@ -26,6 +26,11 @@ def get_the_oldest_age(ages: list[int]) -> int:
     Returns:
         int: the oldest age.
     '''
+    d=0
+    for i in ages:
+        if d<i:
+            d=i
+    return d
 
 
 def get_the_youngest_age(ages: list[int]) -> int:

@@ -14,6 +14,9 @@ data = read_data('Data/randomusers.json')
 
 def main():
     ages = get_all_ages(data)
-    print(ages)
+    olest_age = get_the_oldest_age(ages)
+    print(olest_age)
 
 main()
+
+# DRY - Don't Repeat Yourself

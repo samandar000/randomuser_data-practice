@@ -10,3 +10,5 @@ from pictures import get_all_pictures_url
 from streets import get_all_streets
 
 
+data = read_data('Data/randomusers.json')
+print(data)

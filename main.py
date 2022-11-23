@@ -26,7 +26,9 @@ def main():
     nats = get_all_nats(data)
     # print(nats)
     phone_numbers = get_all_numbers(data)
-    print(phone_numbers)
+    # print(phone_numbers)
+    images = get_all_pictures_url(data)
+    print(images)
 
 main()
 

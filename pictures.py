@@ -7,3 +7,7 @@ def get_all_pictures_url(data: dict) -> list[str]:
     Returns:
         list: list of pictures_url.
     '''
+    picture=[]
+    for pic in data['results']:
+        picture.append(pic['picture']['large'])
+    return picture

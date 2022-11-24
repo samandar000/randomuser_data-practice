@@ -26,11 +26,7 @@ def get_the_oldest_age(ages: list[int]) -> int:
     Returns:
         int: the oldest age.
     '''
-    age = []
-
-    for  user in ages['results']:
-        age.append(user['dob']['age'])
-    return max(age) 
+    return max(ages) 
  
 
 def get_the_youngest_age(ages: list[int]) -> int:
@@ -42,4 +38,4 @@ def get_the_youngest_age(ages: list[int]) -> int:
     Returns:
         int: the youngest age.
     '''
-    return
+    return min(ages)

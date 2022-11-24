@@ -31,7 +31,7 @@ def get_users_by_age(data: dict, age: int) -> list[dict]:
     '''
     all = []
     for i in data['results']:
-        if i['dob']['age']  == str(age):
+        if i['dob']['age']  == age:
             title = i['name']['title']
             name = i['name']['first']
             last = i['name']['last']

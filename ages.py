@@ -1,51 +1,45 @@
-# def get_all_ages(data: dict) -> list[int]:
-#     '''get all ages from users data
+def get_all_ages(data: dict) -> list[int]:
+    '''get all ages from users data
     
-#     Args:
-#         data (dict): users data.
+    Args:
+        data (dict): users data.
         
-#     Returns:
-#         list: list of ages.
-#     '''
-#     # create an empty list
-#     ages = []
-#     # loop each user
-#     for user in data['results']:
-#         # append age
-#         ages.append(user['dob']['age'])
+    Returns:
+        list: list of ages.
+    '''
+    # create an empty list
+    ages = []
+    # loop each user
+    for user in data['results']:
+        # append age
+        ages.append(user['dob']['age'])
 
-#     return ages
+    return ages
 
 
-# def get_the_oldest_age(ages: list[int]) -> int:
-#     '''get the oldest age from ages
+def get_the_oldest_age(ages: list[int]) -> int:
+    '''get the oldest age from ages
     
-#     Args:
-#         ages (list): list of ages.
+    Args:
+        ages (list): list of ages.
         
-#     Returns:
-#         int: the oldest age.
-#     '''
-#     d=0
-#     for i in ages:
-#         if d<i:
-#             d=i
-#     return d
+    Returns:
+        int: the oldest age.
+    '''
+    age = []
 
+    for  user in ages['results']:
+        age.append(user['dob']['age'])
+    return max(age) 
+ 
 
-# def get_the_youngest_age(ages: list[int]) -> int:
-#     '''get the youngest age from ages
+def get_the_youngest_age(ages: list[int]) -> int:
+    '''get the youngest age from ages
     
-#     Args:
-#         ages (list): list of ages.
+    Args:
+        ages (list): list of ages.
         
-#     Returns:
-#         int: the youngest age.
-#     '''
-#     if len(ages) == 0:
-#         return 0
-#     min = ages[0]
-#     for i in ages:
-#         if min > i:
-#             min = i
-#     return min
+    Returns:
+        int: the youngest age.
+    '''
+    return

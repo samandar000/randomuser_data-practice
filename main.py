@@ -20,7 +20,7 @@ def main():
     # ages = get_all_ages(data)
     # olest_age = get_the_oldest_age(ages)
     # youngest_age = get_the_youngest_age(ages)
-    # print(youngest_age)
+    
     cities = get_all_cities(data)
     # print(cities)
     countries = get_all_countries(data)
@@ -37,7 +37,7 @@ def main():
     # print(streets)
     country = get_users_by_nat(data, 'DE')
     # print(by country)
-    adults = get_users_by_age(data,31)
+    adults = get_users_by_age(data,51)
     # print(by ages)
     city = get_users_by_city(data,'Coswig')
     # print(by city)
